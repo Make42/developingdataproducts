@@ -1,20 +1,7 @@
 library(shiny)
 library(ggplot2)
-# library(KernSmooth)
-# library(regpro)
-# library(data.table)
-# library(reshape2)
 
 ############### FUNCTIONS
-
-# nearest_val_in_vec <- function(val, compvec, ergvec = 1:length(compvec)) {
-#   
-#   dt = data.table(compvec, ergvec)
-#   setkey(dt, compvec)
-# 
-#   dt[J(val), ergvec, roll = "nearest"]
-#   
-# }
 
 list_contains <- function(list,string){
   if(length(list)==0){
@@ -28,7 +15,7 @@ list_contains <- function(list,string){
   return(FALSE)
 }
 
-############### DATEN-IMPORT
+############### DATA-IMPORT
 
 data(mtcars)
 mtcars <- mtcars
@@ -49,9 +36,7 @@ textframe <- data.frame( "mpg" = "Miles/(US) gallon",
 ############### SHINY
 
 shinyServer(function(input, output){
-  
-  ############### ggplot-Density
-  
+   
   output$plot <- renderPlot({
     
     gg <- ggplot(mtcars, aes_string(x=input$xaxis, y=input$yaxis)) +
