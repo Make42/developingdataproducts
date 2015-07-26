@@ -547,7 +547,7 @@ body {
 
 
 .reveal {
-  font-family: "Lato", sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
   
 .reveal h1,
@@ -556,7 +556,7 @@ body {
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-  font-family: "News Cycle", Impact, sans-serif;
+  font-family: 'Helvetica', Impact, sans-serif;
 }
 
 
@@ -830,18 +830,17 @@ hljs.initHighlightingOnLoad();
 <div class="slideContent" >
 <ul>
 <li>State-of-the-art plotting engine ggplot2</li>
-<li>Choose whatever variables you would like for your (nicely labeled) axis</li>
-<li>Control every important paramter in the regression analysis</li>
-<li>Dynamic control: Controls appear if relevant and disappear if not</li>
+<li>Choose variables on nicely labeled axis</li>
+<li>Control important paramters in the regression analysis</li>
+<li><em>Context sensitive control</em>: Parameters appear only if needed</li>
+<li>Choose from two regression models:</li>
 </ul>
-
-<p>Choose from two regression models:</p>
 
 <p><strong>Linear Regression</strong> which follows \( y = \beta_0 + \beta_1 \cdot x_1 \)</p>
 
 <p>(see <a href="https://en.wikipedia.org/wiki/Linear_regression">https://en.wikipedia.org/wiki/Linear_regression</a>)</p>
 
-<p><strong>Loess Smoothing</strong> with the tri-cube weight function \( w(x) = (1 - |x|^3)^3 \operatorname{I}\left[\left| x\right| < 1\right] \)</p>
+<p><strong>Loess Smoothing</strong> with the tri-cube weight function \( w(x) = (1 - |x|^3)^3 \operatorname{I}\left[\left| x\right| < 1\right] \) </p>
 
 <p>(see <a href="https://en.wikipedia.org/wiki/Local_regression">https://en.wikipedia.org/wiki/Local_regression</a>)</p>
 
